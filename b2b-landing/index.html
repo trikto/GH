@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Snow Drop Valley | Premium B2B Greenhouse Solutions</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Newsreader:ital,opsz,wght@0,6..72,400..800;1,6..72@400..800&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary-container": "#2d5a27",
+                        "on-secondary-fixed-variant": "#374c31",
+                        "on-surface": "#1a1c1a",
+                        "on-secondary-fixed": "#0c2009",
+                        "on-primary-fixed-variant": "#23501e",
+                        "surface": "#faf9f6",
+                        "surface-container-highest": "#e3e2e0",
+                        "background": "#faf9f6",
+                        "error": "#ba1a1a",
+                        "primary-fixed-dim": "#a1d494",
+                        "surface-tint": "#3b6934",
+                        "outline": "#72796e",
+                        "surface-variant": "#e3e2e0",
+                        "primary": "#154212",
+                        "on-tertiary-container": "#ffaf92",
+                        "on-background": "#1a1c1a",
+                        "secondary-container": "#d0eac5",
+                        "on-tertiary-fixed-variant": "#6f3721",
+                        "surface-container-low": "#f4f3f1",
+                        "on-primary-container": "#9dd090",
+                        "outline-variant": "#c2c9bb",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary": "#ffffff",
+                        "tertiary-fixed-dim": "#ffb59a",
+                        "surface-bright": "#faf9f6",
+                        "surface-container-high": "#e9e8e5",
+                        "on-error-container": "#93000a",
+                        "on-primary-fixed": "#002201",
+                        "tertiary": "#5e2a15",
+                        "surface-dim": "#dbdad7",
+                        "on-tertiary-fixed": "#380d00",
+                        "tertiary-fixed": "#ffdbcf",
+                        "secondary": "#4e6448",
+                        "inverse-primary": "#a1d494",
+                        "surface-container": "#efeeeb",
+                        "primary-fixed": "#bcf0ae",
+                        "secondary-fixed-dim": "#b5ceaa",
+                        "error-container": "#ffdad6",
+                        "inverse-on-surface": "#f2f1ee",
+                        "on-secondary-container": "#546a4d",
+                        "tertiary-container": "#7a4029",
+                        "secondary-fixed": "#d0eac5",
+                        "on-primary": "#ffffff",
+                        "surface-container-lowest": "#ffffff",
+                        "inverse-surface": "#2f312f",
+                        "on-error": "#ffffff",
+                        "on-surface-variant": "#42493e"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Newsreader", "serif"],
+                        "body": ["Inter", "sans-serif"],
+                        "label": ["Inter", "sans-serif"]
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+
+        .editorial-shadow {
+            box-shadow: 0 12px 32px rgba(26, 28, 26, 0.06);
+        }
+
+        .organic-gradient {
+            background: linear-gradient(135deg, #154212 0%, #2d5a27 100%);
+        }
+    </style>
+    <style>
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
+</head>
+
+<body class="bg-surface text-on-surface font-body antialiased">
+    <!-- TopAppBar -->
+    <header class="fixed top-0 w-full z-50 bg-[#faf9f6]/80 dark:bg-[#1a2e1d]/80 backdrop-blur-xl">
+        <nav class="flex justify-between items-center max-w-7xl mx-auto px-4 md:px-8 h-20">
+            <div class="flex items-center gap-2 md:gap-3">
+                <span class="material-symbols-outlined text-[#154212] text-2xl md:text-3xl"
+                    data-icon="potted_plant">potted_plant</span>
+                <span class="text-xl md:text-2xl font-serif font-bold text-[#154212] dark:text-[#f4f3f1] tracking-tight">Snow Drop
+                    Valley</span>
+            </div>
+            <div class="hidden md:flex items-center gap-10">
+                <a class="text-[#64748b] dark:text-[#c2c9bb] hover:text-[#2d5a27] font-sans font-semibold text-sm transition-colors duration-200"
+                    href="#home">Home</a>
+                <a class="text-[#64748b] dark:text-[#c2c9bb] hover:text-[#2d5a27] font-sans font-semibold text-sm transition-colors duration-200"
+                    href="#plants">Our Plants</a>
+                <a class="text-[#64748b] dark:text-[#c2c9bb] hover:text-[#2d5a27] font-sans font-semibold text-sm transition-colors duration-200"
+                    href="#contact">Services</a>
+                <a class="text-[#64748b] dark:text-[#c2c9bb] hover:text-[#2d5a27] font-sans font-semibold text-sm transition-colors duration-200"
+                    href="#about">About Us</a>
+            </div>
+            <a href="#contact"
+                class="bg-primary text-on-primary px-4 md:px-6 py-2 md:py-2.5 rounded-lg font-sans font-semibold text-xs md:text-sm hover:opacity-90 transition-all duration-300 inline-block shrink-0">
+                Contact Us
+            </a>
+        </nav>
+    </header>
+    <main class="pt-20">
+        <!-- Hero Section -->
+        <section id="home" class="relative w-full min-h-[100dvh] md:min-h-0 md:h-[751px] flex items-center overflow-hidden py-24 md:py-0">
+            <div class="absolute inset-0 z-0">
+                <img class="w-full h-full object-cover"
+                    data-alt="Stunning aerial view of misty green tea hills and modern glass greenhouses in the Sri Lankan upcountry at sunrise with soft golden light"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBIFFifk4c7t5s6Dt4jWoHXVGq23ofjOwSNLEOXc_wuBQfHx9q8njnZWTMT-q6go0hHIswh--YTAK1jekdwZ1cqAIKP1YtBZvOrnIeqVgC0QCqZg2e5CcGMWNRH4MjCYben-VEr7cb8iqb_MefgRs3ja1ySP6Lv9908Vxl5ob0f8xehGRF7nd4Sio86IdGruIVs922hzgSJJkKQ4dw0kH4-Hmx4AAbS853cqeMYPOJsElm2Ellv0p8qTI6Jw-zYuTVOxjFgkZtwBkNb" />
+                <div class="absolute inset-0 bg-black/20"></div>
+            </div>
+            <div class="relative z-10 max-w-7xl mx-auto px-4 md:px-8 w-full mt-10 md:mt-0">
+                <div class="max-w-2xl bg-surface/90 backdrop-blur-md p-6 md:p-12 rounded-xl editorial-shadow">
+                    <span
+                        class="inline-block py-1 px-3 bg-tertiary-fixed text-on-tertiary-fixed-variant text-xs font-bold tracking-widest uppercase mb-4 md:mb-6 rounded-full">B2B
+                        Premium Produce</span>
+                    <h1 class="font-headline text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-primary leading-[1.1] tracking-tight mb-4 md:mb-6">
+                        Organically Grown Fresh Leaves.</h1>
+                    <p class="text-slate-gray text-base md:text-lg mb-6 md:mb-8 leading-relaxed max-w-lg">Sustainable, premium quality
+                        produce straight from our upcountry hills to your retail shelves. Engineered for freshness,
+                        designed for professional scale.</p>
+                    <button onclick="document.getElementById('plants').scrollIntoView()"
+                        class="organic-gradient text-white px-8 py-4 rounded-lg font-semibold text-base flex items-center gap-3 hover:scale-[1.02] transition-transform duration-300">
+                        Explore Our Collection
+                        <span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <!-- Product Catalog Grid -->
+        <section id="plants" class="py-16 md:py-24 bg-surface">
+            <div class="max-w-7xl mx-auto px-4 md:px-8">
+                <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 md:mb-16 gap-6">
+                    <div>
+                        <h2 class="font-headline text-3xl md:text-5xl text-primary mb-4 tracking-tight">Our Cultivations</h2>
+                        <p class="text-slate-gray text-base md:text-lg max-w-xl">We specialize in high-yield, nutrient-dense
+                            varieties optimized for long shelf life and vibrant retail display.</p>
+                    </div>
+                    <div class="hidden md:block h-px flex-1 mx-12 bg-outline-variant/30"></div>
+                    <!-- <div class="flex gap-4">
+                        <button
+                            class="p-3 border border-outline-variant/40 rounded-full hover:bg-surface-container-high transition-colors">
+                            <span class="material-symbols-outlined" data-icon="chevron_left">chevron_left</span>
+                        </button>
+                        <button
+                            class="p-3 border border-outline-variant/40 rounded-full hover:bg-surface-container-high transition-colors">
+                            <span class="material-symbols-outlined" data-icon="chevron_right">chevron_right</span>
+                        </button>
+                    </div> -->
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Leafy Greens -->
+                    <div
+                        class="group bg-surface-container-lowest rounded-xl overflow-hidden editorial-shadow transition-all duration-300 hover:-translate-y-2">
+                        <div class="aspect-[4/3] overflow-hidden">
+                            <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                data-alt="Vibrant assorted leafy greens in a clean rustic wooden crate, morning sunlight filtering through greenhouse glass"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDKxSgFQBu_B8UBg4iJUtOAqaL7Qa-ECQpsqP_e6sdiE8kMo0YOWHc4VZAjNAdtyRRCXQ8hctJgOLplsSJi-jFpwJ7Ga7779ZTnpmJ8jLGWHwEawW7uMOc9sJZuDUm_E-jc725k-t-ApWQIxRxb23_oUM4JQCMCRkmrzPmHnxVtMZLm0VAOs0przzYJvqcd5B26WIwbSkjG-nRkWCLJNEtmbn2zpjLjMmBMb2Vh5S4ulN-rIFz2ySq--h8uTn8cYL8UImcW2tg2Hpps" />
+                        </div>
+                        <div class="p-8">
+                            <div class="flex justify-between items-start mb-4">
+                                <h3 class="font-headline text-2xl text-primary">Leafy Greens</h3>
+                                <span
+                                    class="bg-tertiary-fixed text-on-tertiary-fixed-variant px-2 py-0.5 text-[10px] font-bold rounded uppercase">In
+                                    Stock</span>
+                            </div>
+                            <p class="text-slate-gray text-sm mb-6">Assorted heritage varieties including Kale and Swiss
+                                Chard, grown in mineral-rich soil.</p>
+                            <a class="text-primary font-semibold text-sm flex items-center gap-2 group/link" href="#">
+                                View Details
+                                <span
+                                    class="material-symbols-outlined text-sm group-hover/link:translate-x-1 transition-transform"
+                                    data-icon="trending_flat">trending_flat</span>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Spinach -->
+                    <div
+                        class="group bg-surface-container-lowest rounded-xl overflow-hidden editorial-shadow transition-all duration-300 hover:-translate-y-2">
+                        <div class="aspect-[4/3] overflow-hidden">
+                            <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                data-alt="Close-up of vibrant dark green spinach leaves with water droplets, macro photography under bright greenhouse lighting"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBwR90ntFyDgL7sRHVuSqPCwM2XbHRBTalrp5tkaEBgZ34eIrDNb6SBmi-6kyEVzmszAtCje62cnMw0rcPX9pQUue6ORKUtVJjP_LhnaPuxLkyi4OUI9542qrod4UG3hWCd21dbQS4_pvMB6V2FkXaC6I-sTeb5MRndvZIjZRZZ_E8-eOTJvBTooxBsL8uqlykluLwTZQj8ehLAC0cdOlXm96V7o4vy2f9iOejaiGUv6gj4_v07fx4-lMrUb8ThlX-dJf3rkRiieRi9" />
+                        </div>
+                        <div class="p-8">
+                            <div class="flex justify-between items-start mb-4">
+                                <h3 class="font-headline text-2xl text-primary">Spinach</h3>
+                                <span
+                                    class="bg-secondary-container text-on-secondary-container px-2 py-0.5 text-[10px] font-bold rounded uppercase">Wholesale
+                                    Ready</span>
+                            </div>
+                            <p class="text-slate-gray text-sm mb-6">Hydroponically harvested baby spinach, triple-washed
+                                and packed for immediate logistics.</p>
+                            <a class="text-primary font-semibold text-sm flex items-center gap-2 group/link" href="#">
+                                View Details
+                                <span
+                                    class="material-symbols-outlined text-sm group-hover/link:translate-x-1 transition-transform"
+                                    data-icon="trending_flat">trending_flat</span>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Cucumber -->
+                    <div
+                        class="group bg-surface-container-lowest rounded-xl overflow-hidden editorial-shadow transition-all duration-300 hover:-translate-y-2">
+                        <div class="aspect-[4/3] overflow-hidden">
+                            <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                data-alt="Sleek English cucumbers hanging from vines in a hi-tech hydroponic greenhouse, pristine and uniform shape"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBMnPoT_j0NePrqhLEu8WKE8xaJ8CeZJF4z8drXcoPJcfD_N-j6kXoGQpoxm88vG2XcmOP5E3Ox55zp3JDswijj_JSIOGag1h2idgAvatp1qdBJCS_SQ4AOj0QkYesW8M1KEzniV6edv3uee2qLTMP2pc77TPzDDHPTevBeMC--U8bbJTqPIsLcYH8De6maz7bpx2-pLPHuTzw6SeUnNvqe2zQqT8mxU-S39zaiP9PWQlM1fewShPU7XsArePF7LY-GJNDlxzpqQdgN" />
+                        </div>
+                        <div class="p-8">
+                            <div class="flex justify-between items-start mb-4">
+                                <h3 class="font-headline text-2xl text-primary">Cucumber</h3>
+                                <span
+                                    class="bg-tertiary-fixed text-on-tertiary-fixed-variant px-2 py-0.5 text-[10px] font-bold rounded uppercase">Popular</span>
+                            </div>
+                            <p class="text-slate-gray text-sm mb-6">Crisp, seedless varieties cultivated for uniform
+                                size and extended shelf stability.</p>
+                            <a class="text-primary font-semibold text-sm flex items-center gap-2 group/link" href="#">
+                                View Details
+                                <span
+                                    class="material-symbols-outlined text-sm group-hover/link:translate-x-1 transition-transform"
+                                    data-icon="trending_flat">trending_flat</span>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Gotukola -->
+                    <div
+                        class="group bg-surface-container-lowest rounded-xl overflow-hidden editorial-shadow transition-all duration-300 hover:-translate-y-2">
+                        <div class="aspect-[4/3] overflow-hidden">
+                            <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                data-alt="Dense carpet of fresh Gothukola leaves in a traditional farming plot, rich green textures and organic soil"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-1D945SKjRNOaJqfqoMitxXjeXJ4jQQNTd965OC3443S83wZJMnqo-vW2vVGD5PTVukzO7jxzVHEq3vkscV-kJvGFCuQbgJNGbLmvOHCec8aUD2CIcuhvmalKP4hzmOt3inYIn8EujjjH7uiTlu_XbNWZUG59VyuDXbyQfmfA2jYovLmXtSg-x0WHZmoxNmGKLXqfTnP18kWP8dvu5rPhJZEQRc4Zbk1ug44M0O9uDVWHh57xlPLXVXuBhFldfnuGcse69BFvjNZ7" />
+                        </div>
+                        <div class="p-8">
+                            <div class="flex justify-between items-start mb-4">
+                                <h3 class="font-headline text-2xl text-primary">Gotukola</h3>
+                                <span
+                                    class="bg-secondary-container text-on-secondary-container px-2 py-0.5 text-[10px] font-bold rounded uppercase">Local
+                                    Roots</span>
+                            </div>
+                            <p class="text-slate-gray text-sm mb-6">Premium Gotu Kola cultivated using traditional
+                                wisdom and modern quality controls.</p>
+                            <a class="text-primary font-semibold text-sm flex items-center gap-2 group/link" href="#">
+                                View Details
+                                <span
+                                    class="material-symbols-outlined text-sm group-hover/link:translate-x-1 transition-transform"
+                                    data-icon="trending_flat">trending_flat</span>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Lettuce -->
+                    <div
+                        class="group bg-surface-container-lowest rounded-xl overflow-hidden editorial-shadow transition-all duration-300 hover:-translate-y-2">
+                        <div class="aspect-[4/3] overflow-hidden">
+                            <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                data-alt="Lush heads of butterhead lettuce in rows, soft green and red leaves, clean professional farm setting"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAegPpOvOrpKRu1aaGSuo_NPV5_IAbu2t6QsivVxMZHjjSyUsBniGgRBjM_d5LerehI1ojkMaaMrwOpQe1XHNIXQAvY0oMSG7HkswsTdBTqgY4Ei-6B7BPtJ8OixtK_uXA2uAn8tAnqecBdLwdteDrUDj1tL0JWsAaW1nmPpqJwPGRuxyuzBI3w65zlKV47GRRe4NXSx5yxCLg5E1yOwP19JsrljfpxvRfY8mEsuK_eeiM3PiddZZlOT1affCecxjg28PCXta5wEIZV" />
+                        </div>
+                        <div class="p-8">
+                            <div class="flex justify-between items-start mb-4">
+                                <h3 class="font-headline text-2xl text-primary">Lettuce</h3>
+                                <span
+                                    class="bg-tertiary-fixed text-on-tertiary-fixed-variant px-2 py-0.5 text-[10px] font-bold rounded uppercase">New
+                                    Crop</span>
+                            </div>
+                            <p class="text-slate-gray text-sm mb-6">Butterhead, Iceberg, and Romaine varieties with
+                                unmatched crunch and sweetness.</p>
+                            <a class="text-primary font-semibold text-sm flex items-center gap-2 group/link" href="#">
+                                View Details
+                                <span
+                                    class="material-symbols-outlined text-sm group-hover/link:translate-x-1 transition-transform"
+                                    data-icon="trending_flat">trending_flat</span>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- View All Callout -->
+                    <div
+                        class="flex flex-col items-center justify-center border-2 border-dashed border-outline-variant rounded-xl p-12 text-center group hover:border-primary-container transition-colors duration-300">
+                        <span
+                            class="material-symbols-outlined text-primary-container text-4xl mb-4 group-hover:scale-110 transition-transform"
+                            data-icon="potted_plant">potted_plant</span>
+                        <h3 class="font-headline text-2xl text-primary mb-2">Custom Cultivation</h3>
+                        <p class="text-slate-gray text-sm mb-6">Require specific varieties for your supply chain? We
+                            offer bespoke growing contracts.</p>
+                        <button onclick="document.getElementById('contact').scrollIntoView()"
+                            class="bg-secondary-container text-on-secondary-container px-6 py-2 rounded-lg font-semibold text-sm">Inquire
+                            Now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About/Sustainability Section -->
+        <section id="about" class="py-16 md:py-24 bg-surface-container-low overflow-hidden">
+            <div class="max-w-7xl mx-auto px-4 md:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+                    <div class="relative">
+                        <div
+                            class="relative z-10 rounded-2xl overflow-hidden editorial-shadow aspect-square lg:aspect-[4/5]">
+                            <img class="w-full h-full object-cover"
+                                data-alt="Minimalistic professional greenhouse interior, pristine hydroponic systems growing vibrant green leafy vegetables without humans"
+                                src="https://images.unsplash.com/photo-1530836369250-ef72a3f5cda8?q=80&w=2000&auto=format&fit=crop" />
+                        </div>
+                        <!-- Asymmetric background element -->
+                        <div class="absolute -top-12 -left-12 w-64 h-64 bg-primary/5 rounded-full blur-3xl z-0"></div>
+                        <div
+                            class="absolute -bottom-8 -right-8 w-48 h-48 bg-tertiary-fixed/40 rounded-full blur-2xl z-0">
+                        </div>
+                    </div>
+                    <div class="lg:pl-8 mt-6 lg:mt-0">
+                        <span class="text-tertiary font-bold tracking-widest uppercase text-xs mb-4 block">Our
+                            Commitment</span>
+                        <h2 class="font-headline text-3xl md:text-5xl text-primary mb-6 md:mb-8 leading-tight">Elevating Retail Standards
+                            Through Ethical Farming.</h2>
+                        <div class="space-y-10">
+                            <div class="flex gap-6">
+                                <div
+                                    class="shrink-0 w-12 h-12 bg-white rounded-xl flex items-center justify-center editorial-shadow">
+                                    <span class="material-symbols-outlined text-primary" data-icon="eco">eco</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-primary mb-2">100% Organic Practices</h4>
+                                    <p class="text-slate-gray leading-relaxed">No synthetic pesticides or fertilizers.
+                                        We utilize advanced companion planting and natural pest management to ensure
+                                        pure produce.</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-6">
+                                <div
+                                    class="shrink-0 w-12 h-12 bg-white rounded-xl flex items-center justify-center editorial-shadow">
+                                    <span class="material-symbols-outlined text-primary"
+                                        data-icon="local_shipping">local_shipping</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-primary mb-2">Reliable B2B Logistics</h4>
+                                    <p class="text-slate-gray leading-relaxed">Cold-chain integration ensures that our
+                                        produce reaches partners like Cargills and Keells with maximum crispness and
+                                        shelf-life.</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-6">
+                                <div
+                                    class="shrink-0 w-12 h-12 bg-white rounded-xl flex items-center justify-center editorial-shadow">
+                                    <span class="material-symbols-outlined text-primary"
+                                        data-icon="groups">groups</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-primary mb-2">Empowering Local Roots</h4>
+                                    <p class="text-slate-gray leading-relaxed">Our operations employ over 200 local
+                                        families, providing sustainable income and professional agricultural training.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-12 flex gap-8">
+                            <div>
+                                <span class="block text-3xl font-headline text-primary">15+ kg</span>
+                                <span class="text-xs text-slate-gray uppercase tracking-widest font-bold">Monthly
+                                    Yield</span>
+                            </div>
+                            <div class="w-px h-12 bg-outline-variant/30"></div>
+                            <div>
+                                <span class="block text-3xl font-headline text-primary">24h</span>
+                                <span
+                                    class="text-xs text-slate-gray uppercase tracking-widest font-bold">Harvest-to-Shelf</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Final CTA / Contact Module -->
+        <section id="contact" class="py-16 md:py-24 bg-surface">
+            <div class="max-w-7xl mx-auto px-4 md:px-8">
+                <div class="bg-primary rounded-3xl p-8 md:p-16 relative overflow-hidden">
+                    <div class="absolute inset-0 organic-gradient opacity-90"></div>
+                    <!-- Decorative patterns -->
+                    <div class="absolute top-0 right-0 w-96 h-96 bg-white/5 rounded-full -mr-48 -mt-48 blur-3xl"></div>
+                    <div class="relative z-10 flex flex-col gap-6 md:gap-10 items-center text-center max-w-3xl mx-auto">
+                        <div class="w-full">
+                            <h2 class="font-headline text-3xl sm:text-4xl lg:text-5xl text-white mb-4 md:mb-6 leading-tight">Ready to stock
+                                the hills' finest produce?</h2>
+                            <p class="text-on-primary-container text-base md:text-lg mb-8 md:mb-10">Join our network of premium retail
+                                partners. Contact our B2B logistics team for wholesale pricing and delivery schedules.
+                            </p>
+                            <div class="flex flex-col sm:flex-row justify-center gap-6 md:gap-10">
+                                <div class="flex items-center justify-center gap-3 text-white">
+                                    <span class="material-symbols-outlined text-on-primary-container text-3xl"
+                                        data-icon="call">call</span>
+                                    <span class="text-xl">+94 75 593 8255</span>
+                                </div>
+                                <div class="flex items-center justify-center gap-3 text-white">
+                                    <span class="material-symbols-outlined text-on-primary-container text-3xl"
+                                        data-icon="mail">mail</span>
+                                    <span class="text-xl">orders@snowdropvalley.com</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-[#1a2e1d] dark:bg-[#0a150b] w-full py-8">
+        <div class="max-w-7xl mx-auto px-8 flex justify-center items-center">
+            <p class="text-[#c2c9bb]/50 text-sm font-sans tracking-wide Inter">© 2026 Snow Drop Valley. All rights
+                reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
