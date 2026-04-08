@@ -137,12 +137,16 @@
         <!-- Hero Section -->
         <section id="home"
             class="relative w-full min-h-[100dvh] md:min-h-0 md:h-[751px] flex items-center overflow-hidden py-24 md:py-0">
-            <div class="absolute inset-0 z-0">
-                <img class="w-full h-full object-cover"
-                    data-alt="Stunning aerial view of misty green tea hills and modern glass greenhouses in the Sri Lankan upcountry at sunrise with soft golden light"
-                    referrerpolicy="no-referrer"
-                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBIFFifk4c7t5s6Dt4jWoHXVGq23ofjOwSNLEOXc_wuBQfHx9q8njnZWTMT-q6go0hHIswh--YTAK1jekdwZ1cqAIKP1YtBZvOrnIeqVgC0QCqZg2e5CcGMWNRH4MjCYben-VEr7cb8iqb_MefgRs3ja1ySP6Lv9908Vxl5ob0f8xehGRF7nd4Sio86IdGruIVs922hzgSJJkKQ4dw0kH4-Hmx4AAbS853cqeMYPOJsElm2Ellv0p8qTI6Jw-zYuTVOxjFgkZtwBkNb" />
-                <div class="absolute inset-0 bg-black/20"></div>
+            <div class="absolute inset-0 z-0 bg-black" id="hero-slider">
+                <img class="absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 opacity-100 hero-slide"
+                    alt="Snow Drop Valley Cover 1" src="/images/img_1.jpg" />
+                <img class="absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 opacity-0 hero-slide"
+                    alt="Snow Drop Valley Cover 2" src="/images/img_2.jpg" />
+                <img class="absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 opacity-0 hero-slide"
+                    alt="Snow Drop Valley Cover 3" src="/images/img_3.jpg" />
+                <img class="absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 opacity-0 hero-slide"
+                    alt="Snow Drop Valley Cover 4" src="/images/img_4.jpg" />
+                <div class="absolute inset-0 bg-black/30 z-10"></div>
             </div>
             <div class="relative z-10 max-w-7xl mx-auto px-4 md:px-8 w-full mt-10 md:mt-0">
                 <div class="max-w-2xl bg-surface/90 backdrop-blur-md p-6 md:p-12 rounded-xl editorial-shadow">
@@ -455,6 +459,21 @@
                 reserved.</p>
         </div>
     </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const slides = document.querySelectorAll(".hero-slide");
+            let currentSlide = 0;
+            if (slides.length > 0) {
+                setInterval(() => {
+                    slides[currentSlide].classList.remove("opacity-100");
+                    slides[currentSlide].classList.add("opacity-0");
+                    currentSlide = (currentSlide + 1) % slides.length;
+                    slides[currentSlide].classList.remove("opacity-0");
+                    slides[currentSlide].classList.add("opacity-100");
+                }, 3000);
+            }
+        });
+    </script>
 </body>
 
 </html>
